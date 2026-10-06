@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 赤木利彰</title>
+</head>
+<body>
+    <h1>自己紹介</h1>
+        <h2>プロフィール</h2>
+            <p>名前:赤木利彰</p>
+            <p>年齢:25歳</p>
+            <p>出身地:兵庫県</p>
+            <p>趣味:ゲームや音楽</p>
+        <h2>好きなもの</h2>
+            <ul>
+                <li>VTuber</li>
+                <li>ゲーム</li>
+                <li>音楽</li>
+            </ul>
+        <h2>今年の目標</h2>
+            <ol>
+                <li>成長</li>
+                <li>自分磨き</li>
+                <li>スキルアップ</li>
+            </ol>
+        <h2>リンク</h2>
+            <a href="https://github.com/toshiaki-akagi" target="_blank">私のGitHub</a>
+        <h2>好きな風景</h2>
+            <img src="landscape.jpg" alt="好きな風景" width="400">
+        <h2>お問い合わせ</h2>
+        <form action="/submit" method="post">
+
+            <!-- labelにforとidを使う方法 -->
+            <div>
+            <label for="user-name">お名前:</label>
+            <input type="text" id="user-name" name="username" placeholder="山田 太郎" required>
+            </div>
+            
+            <!-- labelではさむ方法 -->
+            <div>
+            <label>
+            お問い合わせ種別:
+            <select name="inquiry-type">
+                <option value="">-- 選択してください --</option>
+                <option value="inquiry-general">一般的なお問い合わせ</option>
+                <option value="inquiry-opinion">ご意見・ご要望</option>
+            </select>
+            </label>
+            </div>
+
+            <div>
+            <label>
+                お問い合わせ内容:
+                <textarea name="inquiry-content" rows="5" cols="40" 
+                placeholder="お問い合わせ内容を入力してください" required></textarea>
+            </label>
+            </div>
+
+            <div>
+            <label><button type="submit">送信ボタン</button></label>
+            </div>
+
+        </form>
+    
+</body>
+</html>
